@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using asdasd.Class.BaseClass;
 
-namespace asdasd.@class.BaseClass
+namespace asdasd.Class.BaseClass
 {
-    public class van
+    public class Van : Сar
+    
     {
         void test()
         {
