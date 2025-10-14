@@ -9,5 +9,8 @@ namespace leson2
 {
     internal class Kamaz: Van
     {
+
+        
+    
     }
 }
