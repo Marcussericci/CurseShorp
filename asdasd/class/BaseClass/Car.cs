@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace asdasd.Class.BaseClass
+namespace leson1.Class.BaseClass
 {
-    public class Сar
+    public abstract class Сar
     {
         private int Id;
         internal string Name;

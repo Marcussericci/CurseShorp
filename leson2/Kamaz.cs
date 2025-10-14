@@ -5,14 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using leson1.Class.BaseClass;
 
-namespace leson1.Class.BaseClass
+namespace leson2
 {
-    public class Van : Сar
-    
+    internal class Kamaz: Van
     {
-        void test()
-        {
-
-        }
     }
 }
