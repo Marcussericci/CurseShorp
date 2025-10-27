@@ -17,30 +17,30 @@ abstract class Operation : IOperation
 
 class Addition : Operation
 {
-    public override string Name => "—ложение";
+    public override string Name => "addition";
     public override double Execute(double a, double b) => a + b;
 }
 
 class Subtraction : Operation
 {
-    public override string Name => "¬ычитание";
+    public override string Name => "subtraction";
     public override double Execute(double a, double b) => a - b;
 }
 
 class Multiplication : Operation
 {
-    public override string Name => "”множение";
+    public override string Name => "multiplication";
     public override double Execute(double a, double b) => a * b;
 }
 
 class Division : Operation
 {
-    public override string Name => "ƒеление";
+    public override string Name => "division";
     public override double Execute(double a, double b)
     {
         if (b == 0)
         {
-            Console.WriteLine("ќшибка: деление на ноль!");
+            Console.WriteLine("Error: division by zero");
             return double.NaN;
         }
         return a / b;
@@ -63,20 +63,18 @@ class ProgramCalculator
     {
         Calculator calc = new Calculator();
 
-        // ћеню
-        Console.WriteLine("ѕростой калькул€тор с ќќѕ:");
-        Console.Write("¬ведите первое число: ");
+        Console.Write("Enter the first number: ");
         double a = double.Parse(Console.ReadLine());
 
-        Console.Write("¬ведите второе число: ");
+        Console.Write("Enter second number");
         double b = double.Parse(Console.ReadLine());
 
-        Console.WriteLine("\n¬ыберите операцию:");
-        Console.WriteLine("1 Ч —ложение");
-        Console.WriteLine("2 Ч ¬ычитание");
-        Console.WriteLine("3 Ч ”множение");
-        Console.WriteLine("4 Ч ƒеление");
-        Console.Write("¬аш выбор: ");
+        Console.WriteLine("\nSelect operation");
+        Console.WriteLine("1 Ч addition");
+        Console.WriteLine("2 Ч subtraction");
+        Console.WriteLine("3 Ч multiplication");
+        Console.WriteLine("4 Ч division");
+        Console.Write("Your choise: ");
         string choice = Console.ReadLine();
 
         IOperation operation = choice switch
@@ -90,13 +88,13 @@ class ProgramCalculator
 
         if (operation == null)
         {
-            Console.WriteLine("Ќеверный выбор операции.");
+            Console.WriteLine("incorrect choise of operation");
             return;
         }
 
         double result = calc.Calculate(operation, a, b);
 
-        Console.WriteLine($"\nќпераци€: {operation.Name}");
-        Console.WriteLine($"–езультат: {result}");
+        Console.WriteLine($"\nOperation: {operation.Name}");
+        Console.WriteLine($"Result: {result}");
     }
 }
