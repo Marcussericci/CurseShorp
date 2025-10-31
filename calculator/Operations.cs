@@ -1,37 +1,53 @@
 ﻿using System;
 
-public class Calculator
+namespace calculator
 {
-    public double Calculate(double a, double b, string operation)
+    public class Addition : IOperation
     {
-        switch (operation)
+        public string Name => "addition";
+        public double Execute(double a, double b) => a + b;
+    }
+
+    public class Subtraction : IOperation
+    {
+        public string Name => "subtraction";
+        public double Execute(double a, double b) => a - b;
+    }
+
+    public class Multiplication : IOperation
+    {
+        public string Name => "multiplication";
+        public double Execute(double a, double b) => a * b;
+    }
+
+    public class Division : IOperation
+    {
+        public string Name => "division";
+        public double Execute(double a, double b)
         {
-            case "1":
-                return a + b;
-            case "2":
-                return a - b;
-            case "3":
-                return a * b;
-            case "4":
-                if (b == 0)
-                {
-                    throw new DivideByZeroException("Division by zero!");
-                }
-                return a / b;
-            default:
-                throw new ArgumentException("Invalid operation");
+            if (b == 0)
+                throw new DivideByZeroException("Division by zero!");
+            return a / b;
         }
     }
 
-    public string GetOperationName(string operation)
+    public class Calculator
     {
-        return operation switch
+        public double Calculate(IOperation operation, double a, double b)
         {
-            "1" => "addition",
-            "2" => "subtraction",
-            "3" => "multiplication",
-            "4" => "division",
-            _ => "unknown operation"
-        };
+            return operation.Execute(a, b);
+        }
+
+        public IOperation GetOperation(string choice)
+        {
+            return choice switch
+            {
+                "1" => new Addition(),
+                "2" => new Subtraction(),
+                "3" => new Multiplication(),
+                "4" => new Division(),
+                _ => null
+            };
+        }
     }
 }
