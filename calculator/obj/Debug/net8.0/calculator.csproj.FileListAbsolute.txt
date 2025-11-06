@@ -1,0 +1,14 @@
+C:\Users\Student\Desktop\CurseShorp-main\calculator\bin\Debug\net8.0\calculator.exe
+C:\Users\Student\Desktop\CurseShorp-main\calculator\bin\Debug\net8.0\calculator.deps.json
+C:\Users\Student\Desktop\CurseShorp-main\calculator\bin\Debug\net8.0\calculator.runtimeconfig.json
+C:\Users\Student\Desktop\CurseShorp-main\calculator\bin\Debug\net8.0\calculator.dll
+C:\Users\Student\Desktop\CurseShorp-main\calculator\bin\Debug\net8.0\calculator.pdb
+C:\Users\Student\Desktop\CurseShorp-main\calculator\obj\Debug\net8.0\calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Desktop\CurseShorp-main\calculator\obj\Debug\net8.0\calculator.AssemblyInfoInputs.cache
+C:\Users\Student\Desktop\CurseShorp-main\calculator\obj\Debug\net8.0\calculator.AssemblyInfo.cs
+C:\Users\Student\Desktop\CurseShorp-main\calculator\obj\Debug\net8.0\calculator.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\CurseShorp-main\calculator\obj\Debug\net8.0\calculator.dll
+C:\Users\Student\Desktop\CurseShorp-main\calculator\obj\Debug\net8.0\refint\calculator.dll
+C:\Users\Student\Desktop\CurseShorp-main\calculator\obj\Debug\net8.0\calculator.pdb
+C:\Users\Student\Desktop\CurseShorp-main\calculator\obj\Debug\net8.0\calculator.genruntimeconfig.cache
+C:\Users\Student\Desktop\CurseShorp-main\calculator\obj\Debug\net8.0\ref\calculator.dll
