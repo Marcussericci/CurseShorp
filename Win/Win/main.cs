@@ -21,5 +21,13 @@ namespace Win
         {
 
         }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPaint frmPaint = new FrmPaint();
+            frmPaint.MdiParent = this;
+            frmPaint.Show();  
+
+        }
     }
 }

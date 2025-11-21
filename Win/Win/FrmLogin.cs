@@ -32,6 +32,9 @@ namespace Win
             }
         }
 
- 
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

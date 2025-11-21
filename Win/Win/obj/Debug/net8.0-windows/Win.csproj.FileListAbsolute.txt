@@ -16,3 +16,4 @@ C:\Users\Student\Desktop\CurseShorp\Win\Win\obj\Debug\net8.0-windows\Win.genrunt
 C:\Users\Student\Desktop\CurseShorp\Win\Win\obj\Debug\net8.0-windows\ref\Win.dll
 C:\Users\Student\Desktop\CurseShorp\Win\Win\obj\Debug\net8.0-windows\Win.main.resources
 C:\Users\Student\Desktop\CurseShorp\Win\Win\obj\Debug\net8.0-windows\Win.FrmLogin.resources
+C:\Users\Student\Desktop\CurseShorp\Win\Win\obj\Debug\net8.0-windows\Win.FrmPaint.resources

@@ -103,6 +103,7 @@
             Controls.Add(button1);
             Name = "FrmLogin";
             Text = "Form1";
+            Load += FrmLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
